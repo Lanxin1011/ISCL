@@ -104,7 +104,7 @@
 			<tr>
 				<td>
 					<div>
-					<img class="center" src="./images/fig1.png" width="1000" /> <br>
+					<img class="center" src="./images/fig1.png" width="600" /> <br>
 					<p class="image-caption">
 						Figure 1. (a) Detection results of Faster R-CNN. (b) Sample Distribution of the training set in GF and FAIR1M Datasets. (c) 10 types of airplanes in GF dataset.
 					</p>				
@@ -119,7 +119,7 @@
 					To address the aforementioned problems, we propose a novel Instance Switching-based Contrastive Learning (ISCL) method including a Decoupled Head (DH), a Contrastive Learning-based Module (CLM), refined Instance Switching (ReIS), and fine-grained attributes assisted GF-RarePlanes Dataset (GRD) to progressively and selectively switch instances that are easily misclassified and optimize the feature space distribution accordingly.
 					Our contributions are four-folds:
 					<ul style="font-weight:normal; text-align:justify;">
-							<li> We propose CLM to mitigate the problem of slight inter-class discrepancy by optimizing the feature space distribution with InfoNCE<sup>+</sup>> loss, which is built on a decoupled head with a cascaded form. </li>
+							<li> We propose CLM to mitigate the problem of slight inter-class discrepancy by optimizing the feature space distribution with InfoNCE<sup>+</sup> loss, which is built on a decoupled head with a cascaded form. </li>
 							<li> We introduce the ReIS module to alleviate the class imbalance problem by augmenting novel instances. Besides, a cross-shaped Gaussian kernel that fits the shape of airplanes is designed to alleviate background inconsistency while switching. </li>
 							<li> We design an optimization strategy based on CLM and ReIS, dubbed ISCL, to combine the abilities of expanding inter-class distance and augmenting instances, which achieves an considerable lift on the performance of fine-grained airplane detection. </li>
 							<li> We contribute a fine-grained attribute-assisted dataset GRD in facilitating the detector with the ability to learn subtle differences among classes. By pretraining on GRD, the detection accuracy of classes holding slight discrepancy with others has greatly improved. </li>
